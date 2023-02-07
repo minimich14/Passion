@@ -4,35 +4,240 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les drapeaux du monde</title>
+    <title>La Factosphère</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@200..900&display=swap');
+
+        * {
+            box-sizing: border-box;
+            color: #333;
+        }
+        html, 
+        body {
+            margin: 0;
+            min-height: 100vh;
+        }
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
+        h1, 
+        h2, 
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        div.wrapper {
+            min-height: 100vh;
+            position: relative;
+            padding-bottom: 15vh;
+        }
+        main {
+            /* display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; */
+            padding: 1em;
+        }
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            bottom: 0;
+            position: absolute;
+            width: 100%;
+            padding: 1em;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* 
+        ================================================== 
+        2 - NAVIGATION
+        ================================================== 
+        */
+        nav {
+            top: 0;
+            position: sticky;
+            background-color: #2a75ff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12);
+        }
+
+        nav > aside {
+            color: #fff;
+            letter-spacing: 1px;
+        }
+
+        nav > div a {
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 .25em;
+            font-weight: 500;
+            letter-spacing: 1px;
+            font-size: 1em;
+            color: #fff;
+        }
+
+        picture img {
+            width: 100%;
+        }
+
+        section div {
+            display: flex;
+            flex-flow: wrap;
+            justify-content: flex-start;
+            gap: 2em;
+        }
+        
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex: 0 1 300px;
+            padding: 1em;
+            border-radius: 0.3em;
+            background-color: #ebeff3;
+            /* margin: 1em; */
+        }
+
+        article img {
+            aspect-ratio: 3/2;
+            width: 100%;
+        }
+
+        article h3 {
+            width: 100%;
+        }
+
+        article p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Accueil</a>
-    </nav>
-
-    <main>
-        <header>
-            <h1>Les drapeaux du monde</h1>
-            <picture>
-                <source srcset="" media="(max-width:720px)">
-                <img src="" alt="">
-            </picture>
-        </header>
-        
-        <!-- CONTINENTS -->
-        <section>
-            <h2>Continents</h2>
-
-        </section>
+    <div class="wrapper">
+        <nav>
+            <aside>
+                La Factosphère
+            </aside>
+            <div>
+                <a href="index.html">Accueil</a>
+            </div>
+        </nav>
+    
+        <main>
+            <header>
+                <h1>La Factosphère</h1>
+                <picture>
+                    <source srcset="img/karsten-wurth-B5drkS_Z5RM-unsplash.jpg" media="(max-width:720px)">
+                    <img src="img/karsten-wurth-B5drkS_Z5RM-unsplash.jpg" alt="">
+                </picture>
+            </header>
             
-        <section>
+            <!-- CONTINENTS -->
+            <section class="continents">
+                <h2>Continents</h2>
+                <div>
+                    <article>
+                        <img src="img/karsten-wurth-B5drkS_Z5RM-unsplash.jpg" alt="">
+                        <h3>Faits intéressants sur l'Amérique du Nord</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolorum. Hic, laborum eos cupiditate voluptate quaerat expedita?</p>
+                    </article>
+    
+                    <article>
+                        <img src="img/karsten-wurth-B5drkS_Z5RM-unsplash.jpg" alt="">
+                        <h3>Faits intéressants sur l'Amérique du Sud</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolorum. Hic, laborum eos cupiditate voluptate quaerat expedita?</p>
+                    </article>
+    
+                    <article>
+                        <img src="img/karsten-wurth-B5drkS_Z5RM-unsplash.jpg" alt="">
+                        <h3>Faits intéressants sur l'Europe</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolorum. Hic, laborum eos cupiditate voluptate quaerat expedita?</p>
+                    </article>
+    
+                    <article>
+                        <img src="img/karsten-wurth-B5drkS_Z5RM-unsplash.jpg" alt="">
+                        <h3>Faits intéressants sur l'Afrique</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolorum. Hic, laborum eos cupiditate voluptate quaerat expedita?</p>
+                    </article>
+    
+                    <article>
+                        <img src="img/karsten-wurth-B5drkS_Z5RM-unsplash.jpg" alt="">
+                        <h3>Faits intéressants sur l'Asie</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolorum. Hic, laborum eos cupiditate voluptate quaerat expedita?</p>
+                    </article>
+    
+                    <article>
+                        <img src="img/karsten-wurth-B5drkS_Z5RM-unsplash.jpg" alt="">
+                        <h3>Faits intéressants sur l'Océanie</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolorum. Hic, laborum eos cupiditate voluptate quaerat expedita?</p>
+                    </article>
+    
+                    <article>
+                        <img src="img/karsten-wurth-B5drkS_Z5RM-unsplash.jpg" alt="">
+                        <h3>Faits intéressants sur l'Antarctique</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolorum. Hic, laborum eos cupiditate voluptate quaerat expedita?</p>
+                    </article>
+                </div>
+                
+            </section>
 
-        </section>
-    </main>
-
-    <footer>
-        Copyright © 2022 Michelle Jean-Philippe. Tous droits réservés.
-    </footer>
+            <section class="pays">
+                <h2>Pays</h2>
+                <div>
+                    <article>
+                        <img src="img/karsten-wurth-B5drkS_Z5RM-unsplash.jpg" alt="">
+                        <h3>Faits intéressants sur le Canada</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolorum. Hic, laborum eos cupiditate voluptate quaerat expedita?</p>
+                    </article>
+    
+                    <article>
+                        <img src="img/karsten-wurth-B5drkS_Z5RM-unsplash.jpg" alt="">
+                        <h3>Faits intéressants sur l'Allemagne</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolorum. Hic, laborum eos cupiditate voluptate quaerat expedita?</p>
+                    </article>
+    
+                    <article>
+                        <img src="img/karsten-wurth-B5drkS_Z5RM-unsplash.jpg" alt="">
+                        <h3>Faits intéressants sur le Japon</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolorum. Hic, laborum eos cupiditate voluptate quaerat expedita?</p>
+                    </article>
+    
+                    <article>
+                        <img src="img/karsten-wurth-B5drkS_Z5RM-unsplash.jpg" alt="">
+                        <h3>Faits intéressants sur le Pérou</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolorum. Hic, laborum eos cupiditate voluptate quaerat expedita?</p>
+                    </article>
+    
+                    <article>
+                        <img src="img/karsten-wurth-B5drkS_Z5RM-unsplash.jpg" alt="">
+                        <h3>Faits intéressants sur la Corée du Sud</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolorum. Hic, laborum eos cupiditate voluptate quaerat expedita?</p>
+                    </article>
+    
+                    <article>
+                        <img src="img/karsten-wurth-B5drkS_Z5RM-unsplash.jpg" alt="">
+                        <h3>Faits intéressants sur la Nouvelle Zélande</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolorum. Hic, laborum eos cupiditate voluptate quaerat expedita?</p>
+                    </article>
+                </div>
+                
+            </section>
+        </main>
+    
+        <footer>
+            Copyright © 2022 Michelle Jean-Philippe. Tous droits réservés.
+        </footer>
+    </div>
+    
 </body>
 </html>
